@@ -9,15 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            VStack(spacing: 0) {
+                Color.red
+                Color.indigo
+            }
+            
+            Text("Xablau Morreu")
+                .foregroundColor(.secondary)
+                .padding(50)
+                .background(.ultraThinMaterial)
         }
-        .padding()
     }
 }
+
+//ZStack {
+//    VStack(spacing: 0) {
+//        Color.red
+//        Color.blue
+//    }
+//
+//    Text("Your content")
+//        .foregroundColor(.secondary)
+//        .padding(50)
+//        .background(.ultraThinMaterial)
+//}
+//.ignoresSafeArea()
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
